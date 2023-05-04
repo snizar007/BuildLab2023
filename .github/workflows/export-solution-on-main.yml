@@ -9,7 +9,7 @@ on:
       solution_name:
         description: 'name of the solution to worked on from Power Platform'
         required: true
-        default: ALMLab
+        default: LinearInputControlSolution
        #Do Not change these values
       solution_exported_folder:
         description: 'folder name for staging the exported solution *do not change*'
@@ -25,9 +25,9 @@ on:
        default: solution
 env:
 #edit your values here
-  ENVIRONMENT_URL: '<URL OF YOUR DEV ENVIRONMENT>'
-  CLIENT_ID: '<TYPE YOUR APPLICATION ID HERE>'
-  TENANT_ID: '<TYPE YOUR TENANT ID HERE>'
+  ENVIRONMENT_URL: 'https://orgaaf3ed47.crm.dynamics.com/'  # 20230502Dev
+  CLIENT_ID: 'a88b1599-590d-4b7a-ace1-229dea7fc826'
+  TENANT_ID: 'c9f44141-61a3-483a-b157-783e86287e36'
 permissions:
   contents: write
 jobs:
