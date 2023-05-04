@@ -22,13 +22,13 @@ permissions:
   
 jobs:
   convert-to-managed:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     # or you can say runs-on: ubuntu-latest
     env:
       RUNNER_DEBUG: 1
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         lfs: true
 
