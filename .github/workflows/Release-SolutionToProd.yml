@@ -35,7 +35,7 @@ jobs:
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
-        solution-folder: solutions/LinearInputControlSolution
+        solution-folder: solutions/LinearInputControlSolution/src
         solution-file: out/solutions/LinearInputControlSolution.zip
         solution-type: Unmanaged
 
