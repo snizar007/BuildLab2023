@@ -36,7 +36,7 @@ jobs:
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
         solution-folder: solutions/LinearInputControlSolution
-        solution-file: out/solutions/LinearInputControlSolution.zip
+        solution-file: solutions/LinearInputControlSolution_umanaged.zip
         solution-type: Unmanaged
 
     - name: Export solution as managed
