@@ -1,0 +1,2 @@
+C:\Labs\GitRepositories\BuildLab2023\LinearInputControl\solution\LinearInputControlSolution\obj\Debug\LinearInputControlSolution.cdsproj.AssemblyReference.cache
+C:\Labs\GitRepositories\BuildLab2023\LinearInputControl\solution\LinearInputControlSolution\obj\Debug\LinearInputControlSolution.cdsproj.CoreCompileInputs.cache

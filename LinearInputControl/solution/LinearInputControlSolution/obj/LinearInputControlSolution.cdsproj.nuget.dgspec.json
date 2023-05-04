@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\solution\\LinearInputControlSolution\\LinearInputControlSolution.cdsproj": {}
+  },
+  "projects": {
+    "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\controls\\LinearInputControl\\LinearInputControl.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\controls\\LinearInputControl\\LinearInputControl.pcfproj",
+        "projectName": "LinearInputControl",
+        "projectPath": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\controls\\LinearInputControl\\LinearInputControl.pcfproj",
+        "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\controls\\LinearInputControl\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      }
+    },
+    "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\solution\\LinearInputControlSolution\\LinearInputControlSolution.cdsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\solution\\LinearInputControlSolution\\LinearInputControlSolution.cdsproj",
+        "projectName": "LinearInputControlSolution",
+        "projectPath": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\solution\\LinearInputControlSolution\\LinearInputControlSolution.cdsproj",
+        "packagesPath": "C:\\Users\\Sam\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\solution\\LinearInputControlSolution\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Sam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {
+              "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\controls\\LinearInputControl\\LinearInputControl.pcfproj": {
+                "projectPath": "C:\\Labs\\GitRepositories\\BuildLab2023\\LinearInputControl\\controls\\LinearInputControl\\LinearInputControl.pcfproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.PowerApps.MSBuild.Solution": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}
