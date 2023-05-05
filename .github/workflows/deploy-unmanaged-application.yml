@@ -47,7 +47,8 @@ jobs:
         with:
           # solution-folder: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}
           solution-folder: out/exported/
-          solution-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}.zip
+          # solution-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}.zip
+          solution-file: out/exported/${{ github.event.inputs.solution_name }}.zip
           solution-type: Unmanaged
     
       - name: Import solution as unmanaged to build env
