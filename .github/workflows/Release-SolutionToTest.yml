@@ -12,7 +12,7 @@ on:
       solution_name:
         description: 'name of the solution to worked on from Power Platform'
         required: true
-        default: MySolution
+        default: LinearInputControlSolution 
 #      BUILD_ENVIRONMENT_URL:
 #        description: 'Build environment url.'
 #        type: string
@@ -54,8 +54,8 @@ jobs:
     - name: Pack solution
       uses: microsoft/powerplatform-actions/pack-solution@v0
       with:
-        solution-folder: solutions/MySolution
-        solution-file: out/solutions/MySolution.zip
+        solution-folder: solutions/LinearInputControlSolution
+        solution-file: out/solutions/LinearInputControlSolution.zip
         solution-type: Unmanaged
 
 #    - name: Import solution as unmanaged to build env
@@ -76,7 +76,7 @@ jobs:
         app-id: ${{env.CLIENT_ID}}
         client-secret: ${{ secrets.PowerPlatformSPN }}
         tenant-id: ${{env.TENANT_ID}}
-        solution-name: MySolution
+        solution-name: LinearInputControlSolution
         managed: true
         solution-output-file: out/ship/MySolution_managed.zip
 
@@ -84,7 +84,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: managedSolutions
-        path: out/ship/MySolution_managed.zip
+        path: out/ship/LinearInputControlSolution_managed.zip
 
   release-to-test:
     needs: [ convert-to-managed ]
