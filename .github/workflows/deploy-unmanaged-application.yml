@@ -45,7 +45,8 @@ jobs:
       - name: Pack the solution
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
-          solution-folder: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}
+          # solution-folder: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}
+          solution-folder: out/exported/
           solution-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}.zip
           solution-type: Unmanaged
     
