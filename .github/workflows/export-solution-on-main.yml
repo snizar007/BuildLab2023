@@ -72,7 +72,8 @@ jobs:
         
     - name: Commit changes
       run: |
-        cp -r ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }} ./${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }} 
+        # cp -r ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }} ./${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }} 
+        git fetch --all
         git config --global user.email "no-reply@github.com"
         git config --global user.name "GitHub Actions"
         git checkout main
