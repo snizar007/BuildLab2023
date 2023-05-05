@@ -9,7 +9,7 @@ on:
       solution_name:
         description: 'name of the solution to worked on from Power Platform'
         required: true
-        default: LinearInputControl
+        default: LinearInputControlSolution
        #Do Not change these values
       solution_exported_folder:
         description: 'folder name for staging the exported solution *do not change*'
@@ -32,8 +32,8 @@ permissions:
   contents: write
 jobs:
   export-from-dev:
-    runs-on: windows-latest
-    # or you can say runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
+    # or you can say runs-on: windows-latest
     env:
       RUNNER_DEBUG: 1
 
