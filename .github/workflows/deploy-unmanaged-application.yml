@@ -46,9 +46,9 @@ jobs:
         uses: microsoft/powerplatform-actions/pack-solution@v0
         with:
           # solution-folder: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}
-          solution-folder: out/exported/
+          solution-folder: out/solutions/${{ github.event.inputs.solution_name }}
           # solution-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}.zip
-          solution-file: out/exported/${{ github.event.inputs.solution_name }}.zip
+          solution-file: out/exported/${{ github.event.inputs.solution_name }}_unmanaged.zip
           solution-type: Unmanaged
     
       - name: Import solution as unmanaged to build env
@@ -58,7 +58,8 @@ jobs:
           app-id: ${{env.CLIENT_ID}}
           client-secret: ${{ secrets.PowerPlatformSPN }}
           tenant-id: ${{env.TENANT_ID}}
-          solution-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}.zip
+          # solution-file: ${{ github.event.repository.name}}/${{ github.event.inputs.solution_name }}.zip
+          solution-file: out/exported/${{ github.event.inputs.solution_name }}_unmanaged.zip
           force-overwrite: true
           publish-changes: true
     
