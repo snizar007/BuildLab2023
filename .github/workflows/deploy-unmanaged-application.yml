@@ -25,8 +25,8 @@ on:
         #default: out/stage
 env:
 #edit your values here
-  CLIENT_ID: 'a88b1599-590d-4b7a-ace1-229dea7fc826'
-  TENANT_ID: 'c9f44141-61a3-483a-b157-783e86287e36'
+  CLIENT_ID: '<CLIENT_ID>'
+  TENANT_ID: '<TENANT_ID>'
 
 permissions:
   contents: write
