@@ -9,7 +9,7 @@ on:
       solution_name:
         description: 'name of the solution to worked on from Power Platform'
         required: true
-        default: LinearInputControlSolution
+        default: <SOLUTION_NAME, i.e, PowerAppsTools_lic>
        #Do Not change these values
       solution_exported_folder:
         description: 'folder name for staging the exported solution *do not change*'
@@ -26,8 +26,8 @@ on:
 env:
 #edit your values here
   ENVIRONMENT_URL: '<ENVIRONMENT_URL>'  # Dev Environment
-  CLIENT_ID: '<CLIENT_ID>'
-  TENANT_ID: '<TENANT_ID>'
+  CLIENT_ID: '<CLIENT_ID_FROM_THE_LAB_INSTRUCTIONS>'
+  TENANT_ID: '<TENANT_ID_FROM_THE_LAB_INSTRUCTIONS>'
 permissions:
   contents: write
 jobs:
