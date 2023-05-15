@@ -6,7 +6,7 @@ on:
       solution_name:
         description: "name of the Solution"
         required: true
-        default: LinearInputControlSolution
+        default: <SOLUTION_NAME, i.e, PowerAppsTools_lic>
       # environment_id:
       #   description: "GUID of your Dataverse environment"
       #   required: true
@@ -25,8 +25,8 @@ on:
         #default: out/stage
 env:
 #edit your values here
-  CLIENT_ID: '<CLIENT_ID>'
-  TENANT_ID: '<TENANT_ID>'
+  CLIENT_ID: '<CLIENT_ID_FROM_THE_LAB_INSTRUCTIONS>'
+  TENANT_ID: '<TENANT_ID_FROM_THE_LAB_INSTRUCTIONS>'
 
 permissions:
   contents: write
