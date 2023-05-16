@@ -14,7 +14,7 @@ on:
       environment_url:
         description: "http endpoint of your Dataverse environment"
         required: true
-        default: "<ENVIRONMENT_URL>"
+        default: "<ENVIRONMENT_URL>"  # Test Environment URL
       #solution_source_folder:
        # description: "Location of the solution files"
         #requried: true
